@@ -1,0 +1,45 @@
+.container
+{
+    display:grid;
+    grid-template-areas:
+            "header header header header"
+            ".    section section  . "
+            "footer footer footer footer";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+header
+{
+
+    grid-area:header;
+    text-align: center;
+    background-color: white;
+    border: solid black;
+
+}
+body {
+    background-color: red;
+}
+
+section
+{
+    grid-area:section;
+    text-align:center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+
+}
+h1 {
+    font-size: 100px;
+}
+
+footer
+{
+    grid-area: footer;
+    padding: auto;
+    background-color: white;
+
+
+}
